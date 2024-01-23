@@ -1,0 +1,145 @@
+:is(.top, .bottom) {
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  font-size: 5rem;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px; 
+  outline: none;
+  border: 0px;
+}
+
+.top {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top h1 {
+  color: antiquewhite;
+  font-size: 300%;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.bottom {
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} 
+
+.bottom2 {
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} 
+
+.container {
+  padding: 2rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 68rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75 hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.rm {
+  color: #121212;
+  background-color: #F2F2F2;
+  padding: 1px 4px;
+  display: block;
+  width: 58px;
+  margin-top: 5px;
+  box-shadow: 0px 0px 3px #000;
+  font-family: LeagueGothic, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+#ourserv {
+  margin: 8px 0 15px 20px;
+  width: 75%;
+  /* background-color: #121212; */
+  padding-left: 15%;
+}
+
+#ourserv article {
+  width: 275px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  margin: 0 38px 0 0;
+  margin-top: 0px;
+}
+

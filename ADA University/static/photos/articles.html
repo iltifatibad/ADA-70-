@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="shortcut icon" href="#">
+
+</head>
+<body background="../static/photos/Articles BG.jpg">
+    <script src="../static/js/main.js"></script>
+
+    <div class="alert-shadow">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="rules" style="font-size: 21px; display: inline-block; float: left;">
+                <strong>
+                Scientific article platform for undergraduate and graduate students, scientific researchers, and scientists:
+                Through this platform, individuals engaged in Physics, Chemistry, Geology ,Space Medicine , Space Low,Biology, Mathematics, and Aerospace Engineering from the nearest areas of astronomy can publish their own scientific articles.In order to publish your article on this platform, you must obtain a membership. <br><br>
+                1) The article must be sent in Word form, with a maximum volume of 4 word Pages <br><br>
+                2) Social status (place of work, if any), name, surname, email address, as well as phone number of the author of the article, as well as the scientific supervisor or scientist giving feedback on the article should be noted. <br><br>
+                3) An article without scientific feedback will not be published on the platform. If there is no feedback of scientist on the article, then the author can apply to the editorial board of the platform through the link below to get a feedback. <br><br>
+                4) Each article will be taken for review by the editorial board. If approved, the article will be published within a maximum of 1 month and the author will be notified by email adress.
+            </strong>
+            </div>
+
+            <div class="rules-logo" style="float: right; margin-top: 0%; padding-right: 6%; font-size:75px; display: block;   background-image: linear-gradient(90deg, rgba(106, 0, 255, 0.696), rgb(183, 255, 0), rgb(0, 255, 204));
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;">
+                <h1> The <br> Galactic <br> Society </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ArticlesTopMenu"> 
+        
+            <img src="../static/photos/Home BG.jpg" alt="Logo" style="width: 120px;">
+            <button class="Button" href="/Home" > Home </button>
+            <button class="Button" href="/Aboutus"> About Us </button>
+            <button class="Button" href="/News"> News </button>
+            <button class="Button" href="/Contact"> Contact Us </button>
+            <button class="Button" href="/Partners"> Partners </button>
+            <button class="Button" href="/Policy"> Policy </button>
+
+    </div>
+
+    <div class="ArticlesRightMenu">
+        
+        {% for i in paths %}
+                <article>
+                    <h3 class="News-Title"> {{i}} </h3>
+                </article>
+        {% endfor %}
+
+    </div>
+
+    <div class="ArticlesLeftMenu">
+        
+        {% for i in paths2 %}
+                <article>
+                    <h3 class="News-Title"> {{i}} </h3>
+                </article>
+        {% endfor %}
+
+
+    </div>
+
+    <div class="ArticlesInputArea">
+        <div class="ArticlesAbout">
+            <h1 style="color:rgb(255, 179, 79); font-style: italic; ">
+                
+            </h1>
+        </div>
+        <br><br>
+        <div class="DAD" > 
+            <form id="form" action="/articles" method="post" enctype="multipart/form-data">
+                <input type="file"id="fileUploader" name="file" accept="pdf" >
+                <div class="img-wiew">
+                    <img src="../static/photos/UploadImg.png">
+                    <p> Select your file to upload your Article</p>
+                </div>
+                <div class="articles-data-area">
+                    <h3> Enter Name for your Article </h3>
+                    <textarea name="name" class="articles-name-commit" cols="30" rows="2" minlength="5" maxlength="40"></textarea>
+                    <br><br>
+                </div>        
+                <button type="submit" class="send-button-login"> Send </button>
+            </form>
+        </div>
+
+
+      
+
+        <!-- <div class="Input">
+        <textarea name="Input" id="InputArea" > Attention </textarea>
+        </div> -->
+    </div>
+
+ 
+    </div>
+    
+</body>
+</html>

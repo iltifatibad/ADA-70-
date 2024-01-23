@@ -1,0 +1,74 @@
+server {
+    if ($host = www.thegalacticsociety.com) {
+        return 301 https://$host$request_uri;
+    } 
+    
+
+    if ($host = www.thegalacticsociety.com) {
+        return 301 https://$host$request_uri;
+    } 
+
+
+    listen 80;
+    listen [::]:80;
+
+    server_name thegalacticsociety.com www.thegalacticsociety.com;
+
+    return 301 https://$server_name$request_uri;
+}
+
+
+
+server {
+    listen 80;
+    server_name www.thegalacticsociety.com;
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+    location /{
+        proxy_pass http://217.196.48.99
+    }
+}
+
+
+
+server {
+    #listen 80; # Only if sysctl net.ipv6.bindv6only = 1
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    access_log /var/log/nginx/default-access.log;
+    error_log /var/log/nginx/default-error.log;
+#    include snippets/self-signed.conf;
+#    include snippets/ssl-params.conf;
+    server_name libredu.org www.thegalacticsociety.com; # 1.
+    location / {
+    proxy_http_version 1.1;
+        proxy_pass http://127.0.0.1:8080; # 2.
+
+    }
+#    location /ws/ {
+#        proxy_set_header Upgrade $http_upgrade;
+#        proxy_set_header Connection "upgrade";
+#        proxy_pass "http://localhost:8080/ws/";
+#    }
+    ssl_certificate /etc/letsencrypt/live/domain.org/fullchain.pem; 
+    ssl_certificate_key /etc/letsencrypt/live/domain.org/privkey.pem;
+}
+
+server {
+    if ($host = www.domain.org) {
+        return 301 https://$host$request_uri;
+    } 
+    
+
+    if ($host = domain.org) {
+        return 301 https://$host$request_uri;
+    } 
+
+
+    listen 80;
+    listen [::]:80;
+
+    server_name thegalacticsociety.com www.thegalacticsociety.com;
+
+    return 301 https://$server_name$request_uri;
+}

@@ -1,0 +1,828 @@
+body{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+*{
+    font-family: 'Lato' , sans-serif;
+}
+
+
+
+html, body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    height: 100%;
+}
+
+
+.main-nav { 
+    background-color: black;
+    padding-left: 1%;
+}
+
+
+.main-container{
+    width: 100%;
+    overflow: auto;
+}
+
+div.IndexTopMenu {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    max-width: 1160px;
+    min-height: 40px;
+    margin: auto;
+    text-align: center;
+    /* margin-top: 0; */
+    z-index: 1000;
+}
+
+div.IndexTopMenu .Button {
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;
+    position: relative;
+
+}
+
+div.IndexTopMenu .Button:hover {
+    color: black;
+    background-color:#fff;
+}
+
+div.IndexTopMenu .ButtonT {
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1000;
+    position: relative;
+}
+
+div.IndexTopMenu .ButtonT:hover {
+    color: black;
+    background-color:#fff;
+}
+
+
+div.IndexLeftPanel {
+    /* background-color: red; */
+    max-width: 300px;
+    min-height: 640px;
+    max-height: 640px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    float: left;
+    position: absolute;
+    top: 0px;
+    float: top; 
+    position: absolute;
+}
+
+div.IndexLeftPanel h2{
+    font-family: 'Lato',sans-serif;
+    color: white;
+    margin-left: 40px;
+}
+
+div.IndexLeftPanel .Button{
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative; 
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-weight: bold; 
+    padding-top: 10%; 
+    padding-left: 25%; 
+    text-decoration: none;
+    /* padding-top: 1%; */
+    z-index: 1000;
+}
+
+div.IndexLeftPanel .Button:hover{
+    color: black;
+    background-color:#fff;
+}
+
+.Index-Main-Container{
+    background-image: url("../photos/Home\ BG.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.Index-About-Us {
+    background-image: url("../photos/AboutUs\ BG.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    position: absolute;
+    margin-top: 100%;
+}
+
+
+.Index-Contact-Us {
+    background-image: url("../photos/ContactUs\ BG.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+div.IndexRightPanel {
+    background-color: transparent;
+    max-width: 293px;
+    min-height: 640px;
+    max-height: 640px;
+
+     top: 0px;
+    right: 0px !important; 
+    float: right;
+    float: top; 
+   position: absolute;
+    /* background: rgba(0, 0, 0, 0.5);  */
+} 
+
+ div.IndexRightPanel h2{
+    font-family: 'Lato',sans-serif;
+    color: white;
+    margin-left: 40px;
+}
+
+div.IndexRightPanel .Button{
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative; 
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-weight: bold; 
+    padding-top: 10%;
+    padding-left: 25%;
+    text-decoration: none;
+    /* padding-top: 1%; */
+    z-index: 1000;
+    margin-right: 0 !important;
+}
+
+div.IndexRightPanel .Button:hover{
+    color: black;
+    background-color:#fff;
+}
+
+
+.About-Us-Container {
+    width: 50%;
+    height: 90%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+}
+
+
+.Index-About-Us {
+    text-align: center;
+} */
+
+/* Index.html finished is here */
+
+/* Login.html is started here */
+
+.Main-Box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.Login-Div {
+    max-width: 900px;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(135deg, #00304d, #3b0051); opacity: 0.8;;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(252, 5, 5, 0.15);
+}
+
+
+
+.input-box-login input {
+    height: 45px;
+    width: 40%;
+    position: relative;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .input-box-login span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-top: 1%;
+    background-image: linear-gradient(20deg, rgb(191, 0, 255), rgb(255, 140, 0), rgb(255, 140, 0));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+  .input-box-login input:valid{
+    border: 3px solid rgba(119, 0, 255, 0.474);
+  }
+
+  
+  .input-box-login span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-top: 1%;
+    background-image: linear-gradient(20deg, rgb(0, 255, 128), rgb(255, 140, 0), rgb(255, 140, 0));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+
+  .input-box-margin {
+    margin-top: 11%;
+  }
+
+  .register-button-login{
+    margin-top: 3%;
+    height: 50px;
+    width: 15%;
+    margin-left: 13%;
+    box-shadow: #2d003e;
+    transition: all 0.3s ease;
+    border-radius: 15%;
+    background-color: #150028;
+    color: #ccc;
+    border-color:#3a008c;
+  }
+
+  .register-button-login:hover{
+    background-color: #4300a1a0;
+    border-radius: 5%;
+    color: wheat;
+    font-size: larger;
+    border-color: rgba(0, 8, 157, 0.321);
+  }
+/* Login.html Finished is here */
+/* SignUp.html is started here */
+
+/* .hero-body {
+    justify-content: center;
+  } */
+
+  .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-top: 1%;
+    background-image: linear-gradient(20deg, rgb(191, 0, 255), rgb(255, 140, 0), rgb(255, 140, 0));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+   .input-box input{
+    height: 45px;
+    width: 40%;
+    position: relative;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .input-box input:valid{
+    border: 3px solid rgba(119, 0, 255, 0.474);
+  }
+  
+
+  .Main-Div-SignUp{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background: linear-gradient(135deg, #150028, #2d003e); */
+    
+  }
+
+  .SignUp-Div{
+    max-width: 900px;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(135deg, #00304d, #3b0051); opacity: 0.8;;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(252, 5, 5, 0.15);
+  }
+  .register-button{
+    margin-top: 3%;
+    height: 50px;
+    width: 15%;
+    margin-left: 12%;
+    box-shadow: #2d003e;
+    transition: all 0.3s ease;
+    border-radius: 15%;
+    background-color: #150028;
+    color: #ccc;
+    border-color:#3a008c;
+  }
+
+  .register-button:hover{
+    background-color: #4300a1a0;
+    border-radius: 5%;
+    color: wheat;
+    font-size: larger;
+    border-color: rgba(0, 8, 157, 0.321);
+  }
+
+
+/* SignUp.html Finished is here */
+/* Los.html is Started here */
+
+.Los-Main-Div {
+    margin : auto;
+    /* background-color: black; */
+    height: 100%;
+}
+
+.Los-Main-Div h1 {
+    padding-top: 5%;
+    margin-left: 30%;
+    color: white;
+}
+
+
+/* Articles.html is Started here */
+
+
+
+
+
+
+
+
+
+
+
+/* Certificates starting is here*/
+
+.Button-terms{
+    background-color: transparent;
+    min-height: 40px;
+    text-align: center;
+    height: 70px;
+}
+
+.cer-main{
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.cer-main h1{
+    color: aliceblue;
+    font-size: larger;
+}
+
+
+/* Alert Box Starts From Here */
+
+.alert-shadow {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.alert {
+    text-align: center;
+    padding: 20px;  
+    background: linear-gradient(115deg, #003557, #008c36); opacity: 0.8;;
+    box-shadow: 0 5px 400px rgba(255, 255, 255, 0.15);
+    color: white;
+    width: 100%;
+    height: 90%;
+    /* margin-left: 21.7%; */
+    font-size: 19px;
+    /* position: absolute; */
+    margin-top: 3%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.rules {
+    width: 40%;
+    margin-right: 10%;
+}
+  
+.closebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 2%;
+    font-size: 50px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+/* Alert Box Finished From Here*/
+
+
+
+
+
+
+/* Movie Night Start From Here */
+
+/* body{
+    background-color: black;
+} */
+
+.Enterance-Movie-Nights {
+    height: 100%;
+    width: 40%;
+    background-color: black;
+    float: right;
+}
+
+.movie-headdiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../photos/MovieNights\ BG.jpg");
+    background-size:cover;
+
+}
+
+.About-Movie-Nights  {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.movie-headdiv  h1{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200px;
+    margin: 0px;
+    margin-right: 3%;
+    text-align: right;
+    padding-right: 17px;
+  }
+  
+.movie-headdiv  h2{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150px;
+   margin: 50px;
+   margin-right: 7%;
+   position: relative;
+   bottom: 83px;
+   text-align: right;
+  
+   
+  }
+  
+.movie-headdiv  p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    margin: 50px;
+    position: relative;
+    bottom: 130px;
+    text-align: right;
+    font-size: 16px;
+  }
+  
+.movie-headdiv  h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    margin: 50px;
+    position: relative;
+    bottom: 180px;
+    text-align: right;
+    font-size: 16px;
+  }
+
+
+.movie-maindiv {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/6743.jpg);
+    background-size:cover;
+    overflow: hidden;
+}
+
+/* movie-maindiv{
+    position: relative;
+    left: 10%;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  } */
+  
+  /* body {
+    font-family: sans-serif;
+  } */
+  
+  .card a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    height: 35%;
+    right: 450px;
+    margin: 70px 35% ;
+    background: #2a264f;
+    border: 5px solid #1a163f;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #2a264f;
+  }
+  
+  .moviecard .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-size: 310px 440px;
+    background-position: left top;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .moviecard .img2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-size: 310px 440px;
+    background-position: left bottom;
+    transition: all 0.5s ease-in-out;
+    
+  }
+  
+  .moviecard .title {
+    height: 22%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFC;
+    padding: 15px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -95px 28px -25px #000 inset;
+  }
+  
+  .moviecard .text {
+    position: absolute;
+    bottom: 80px;
+    height: 120px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    transform: rotate(90deg);
+    transform-origin: 0 100px;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .moviecard .catagory {
+    position: absolute;
+    left: 10px;
+    top: 140px;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: #2a264f;
+    color: #fff;
+    border-radius: 5px;
+    transform: translate(-160px, 0);
+    transition: all 0.5s ease;
+  }
+  
+  .moviecard .views {
+    position: absolute;
+    left: 10px;
+    top: 175px;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: #8b2463;
+    color: #fff;
+    border-radius: 5px;
+    transform: translate(-160px, 0);
+    transition: all 0.5s ease 0.15s;
+  }
+  
+  .moviecard:hover .img1 {
+    transform: rotate(10deg) scale(1.3) translate(20px, 50%);
+    transform-origin: 300px 300px;
+    opacity: 0.5;
+  }
+  
+  .moviecard:hover .img2 {
+    transform: rotate(90deg) translate(0px, 150px);
+    transform-origin: -20px 200px;
+  }
+  
+  .cmoviecardard:hover .text {
+    opacity: 0.8;
+    transform: rotate(0deg);
+  }
+  
+  .moviecard:hover .views,
+  .moviecard:hover .catagory {
+    transform: translate(0);
+  }
+
+  .content .main-phrase {
+    font-size: 5rem;
+  }
+  
+
+.wrap .my-index-button {
+  width: 220px !important;
+    height: 50px !important;
+}
+
+.IndexLeftPanel, .IndexRightPanel {
+  margin-top: 35px;
+}
+
+@media only screen and (max-width:1288px) {
+  .content .main-phrase {
+    font-size: 3.5rem;
+  }
+  .wrap .my-index-button {
+    width: 180px !important;
+    height: 45px !important;
+  
+  }
+  .IndexRightPanel .my-index-button {
+    margin-left: 40px;
+  }
+  .wrap .my-index-button {
+    font-size: 17px !important;
+  }
+}
+
+@media only screen and (max-width:1157px) {
+  .content .main-phrase {
+    font-size: 3rem;
+    letter-spacing: -2px;
+  }
+}
+
+@media only screen and (max-width:1016px) {
+  .content .main-phrase {
+    font-size: 2rem;
+    line-height: 55px;
+  }
+  .IndexLeftPanel .my-index-button, .IndexRightPanel .my-index-button {
+    height: 35px !important;
+    padding-top: 7%;
+  }
+  .inner {
+    padding: unset !important;
+  }
+}
+
+.burger-menu i {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  font-size: 2rem;
+  display: none;
+}
+
+@media only screen and (max-width: 873px) {
+  .IndexTopMenu, .IndexLeftPanel, .IndexRightPanel {
+    display: none;
+  }
+  .content .main-phrase {
+    font-size: 3rem;
+    line-height: 65px;
+  }
+  .burger-menu i {
+    display: block;
+    z-index: 1000;
+  }
+}
+
+.burger-menu-list {
+  height: auto;
+  max-height: 565px;
+  overflow: scroll;
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  border-left: 4px solid rgb(255, 255, 255);
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+  transition: max-height 0.5s ease;
+  background-color: rgb(0, 0, 0);
+  transition: max-height 0.5s ease;
+}
+
+.x-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.4rem;
+}
+
+.ul-list {
+  list-style: none;
+}
+
+.ul-list a {
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.ul-list a:hover {
+  color: rgb(188, 188, 188);
+}
+
+.section-list {
+  margin-top: 50px;
+}
+
+  .burger-menu-list.open {
+            max-height: 550px; /* Set the max height to the desired value */
+        }

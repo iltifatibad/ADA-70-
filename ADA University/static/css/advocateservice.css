@@ -1,0 +1,55 @@
+:is(.top, .bottom) {
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  font-size: 5rem;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px; 
+  outline: none;
+  border: 0px;
+}
+
+.top {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top h1 {
+  color: antiquewhite;
+  font-size: 250%;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.bottom {
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} 
+
+.form-wrapper {
+    width: 40%;
+    height: 90% ;
+    /* background-color: black; */
+}
+
+

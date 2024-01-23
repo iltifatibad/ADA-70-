@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/course.css">
+</head>
+<body style="background-image: url(../static/photos/pexels-pixabay-41951.jpg); object-fit: cover;">
+    {% if duty == 'alo' %}
+    <div class="uploadcoursesmaindiv">
+        <div class="createcourse">
+            <form class="courseform" id="form" action="/Spacemagazineupload" method="post" enctype="multipart/form-data">
+                <h1> Create New Course </h1>            
+                <h3> Add Course Name </h1>
+                <input name="name" type="text" class="coursenameinput" required>
+                <input name="files" type="file"  id="fileUploader">
+                <div class="img-wiew">
+                    <img src="../static/photos/upload-icon-30.png">
+                    <p> Select your IMAGE for your Course</p>
+                </div>
+                <button type="submit" class="send-button-coursesupload"> Upload </button>
+            </form>        
+        </div>
+    </div>
+    {% else %}
+    <h1> You are not a member </h1>
+    {% endif %}
+</body>
+</html>

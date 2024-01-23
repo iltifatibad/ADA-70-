@@ -1,0 +1,74 @@
+:is(.top, .bottom) {
+    height: 100vh;
+    height: 100svh;
+    display: grid;
+    font-size: 5rem;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px; 
+    outline: none;
+    border: 0px;
+}
+
+.myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+  }
+
+.top {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.top h1 {
+    color: antiquewhite;
+    font-size: 300%;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.top h5 {
+    color: antiquewhite;
+    font-size: 20%;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.bottom { 
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 5%;
+    display: block;
+    padding-left: 22%;
+    
+}
+
+.exsec {
+    width: 70%;
+    margin-left: 0%;
+    height: 25%;
+    /* background-color: transparent; */
+    border-radius: 3px;
+    display: flex;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: antiquewhite;
+    margin-top: 4%;
+    transition: all 0.3s ease;
+
+}
+
