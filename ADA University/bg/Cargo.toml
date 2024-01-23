@@ -1,0 +1,26 @@
+[package]
+name = "bg"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.0.0-beta.3"
+dotenv = "0.9.0"
+env_logger = "0.10.0"
+log = "0.4"
+tera = "1.15.0"
+actix-files = "0.6.2"
+serde = {version = "*", features = ["derive"]}
+validator = { version = "*", features = ["derive"] }
+sqlx = { version = "*", features = [ "runtime-actix-rustls", "sqlite"] }
+bcrypt = "0.15.0"
+actix-multipart = "0.6.1"
+futures = "0.3.28"
+mime = "0.3.17"
+files = "2.2.3"
+actix-redis = "0.10"
+actix-session = "0.5"
+rand = "0.8.5"
+lettre = "0.11.3"
