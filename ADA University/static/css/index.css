@@ -155,12 +155,12 @@ div.IndexLeftPanel .Button:hover{
 }
 div.IndexRightPanel {
     background-color: transparent;
-    max-width: 293px;
+    max-width: 300px;
     min-height: 640px;
     max-height: 640px;
 
      top: 0px;
-    right: 0px !important; 
+    right: 5px; 
     float: right;
     float: top; 
    position: absolute;
@@ -191,7 +191,6 @@ div.IndexRightPanel .Button{
     text-decoration: none;
     /* padding-top: 1%; */
     z-index: 1000;
-    margin-right: 0 !important;
 }
 
 div.IndexRightPanel .Button:hover{
@@ -708,121 +707,6 @@ div.IndexRightPanel .Button:hover{
   .moviecard:hover .catagory {
     transform: translate(0);
   }
-
-  .content .main-phrase {
-    font-size: 5rem;
-  }
   
 
-.wrap .my-index-button {
-  width: 220px !important;
-    height: 50px !important;
-}
-
-.IndexLeftPanel, .IndexRightPanel {
-  margin-top: 35px;
-}
-
-@media only screen and (max-width:1288px) {
-  .content .main-phrase {
-    font-size: 3.5rem;
-  }
-  .wrap .my-index-button {
-    width: 180px !important;
-    height: 45px !important;
-  
-  }
-  .IndexRightPanel .my-index-button {
-    margin-left: 40px;
-  }
-  .wrap .my-index-button {
-    font-size: 17px !important;
-  }
-}
-
-@media only screen and (max-width:1157px) {
-  .content .main-phrase {
-    font-size: 3rem;
-    letter-spacing: -2px;
-  }
-}
-
-@media only screen and (max-width:1016px) {
-  .content .main-phrase {
-    font-size: 2rem;
-    line-height: 55px;
-  }
-  .IndexLeftPanel .my-index-button, .IndexRightPanel .my-index-button {
-    height: 35px !important;
-    padding-top: 7%;
-  }
-  .inner {
-    padding: unset !important;
-  }
-}
-
-.burger-menu i {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  font-size: 2rem;
-  display: none;
-}
-
-@media only screen and (max-width: 873px) {
-  .IndexTopMenu, .IndexLeftPanel, .IndexRightPanel {
-    display: none;
-  }
-  .content .main-phrase {
-    font-size: 3rem;
-    line-height: 65px;
-  }
-  .burger-menu i {
-    display: block;
-    z-index: 1000;
-  }
-}
-
-.burger-menu-list {
-  height: auto;
-  max-height: 565px;
-  overflow: scroll;
-  width: 250px;
-  background-color: rgb(0, 0, 0);
-  border-left: 4px solid rgb(255, 255, 255);
-  top: 0;
-  right: 0;
-  position: absolute;
-  display: none;
-  transition: max-height 0.5s ease;
-  background-color: rgb(0, 0, 0);
-  transition: max-height 0.5s ease;
-}
-
-.x-button {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 1.4rem;
-}
-
-.ul-list {
-  list-style: none;
-}
-
-.ul-list a {
-  text-decoration: none;
-  line-height: 40px;
-}
-
-.ul-list a:hover {
-  color: rgb(188, 188, 188);
-}
-
-.section-list {
-  margin-top: 50px;
-}
-
-  .burger-menu-list.open {
-            max-height: 550px; /* Set the max height to the desired value */
-        }
+/* Movie Nights End Here*/
