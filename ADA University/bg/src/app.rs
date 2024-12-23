@@ -254,7 +254,7 @@ pub async fn post_schoolarships(tmpl : web::Data<Tera> , form : web::Form<Advoca
         form.0.email, 
         form.0.phone,
       );
-    let smtp_key : &str = "xsmtpsib-9eadffaef474428d38bfa7f1ae67f43a75dbbc0b7fee011fdae7eda3c9718518-QYjMTWN1Zpz9rEtO";
+    let smtp_key : &str = ".";
     let from_email : &str = "thegalacticsociety1@gmail.com";
     let host : &str = "smtp-relay.sendinblue.com";
     let to_email : &str = "iltifatibad@gmail.com";
@@ -299,7 +299,7 @@ pub async fn post_astroeducation(tmpl : web::Data<Tera> , form : web::Form<Advoc
         form.0.email,
         form.0.phone,
       );
-    let smtp_key : &str = "xsmtpsib-9eadffaef474428d38bfa7f1ae67f43a75dbbc0b7fee011fdae7eda3c9718518-QYjMTWN1Zpz9rEtO";
+    let smtp_key : &str = ".";
     let from_email : &str = "thegalacticsociety1@gmail.com";
     let host : &str = "smtp-relay.sendinblue.com";
     let to_email : &str = "iltifatibad@gmail.com";
@@ -461,7 +461,7 @@ pub async fn post_conferences(tmpl : web::Data<Tera> , form : web::Form<Advocate
         form.0.email,
         form.0.phone,
       );
-    let smtp_key : &str = "xsmtpsib-9eadffaef474428d38bfa7f1ae67f43a75dbbc0b7fee011fdae7eda3c9718518-QYjMTWN1Zpz9rEtO";
+    let smtp_key : &str = ".";
     let from_email : &str = "thegalacticsociety1@gmail.com";
     let host : &str = "smtp-relay.sendinblue.com";
     let to_email : &str = "iltifatibad@gmail.com";
@@ -520,7 +520,7 @@ pub async fn post_advocateservice(tmpl : web::Data<Tera> , form : web::Form<Advo
         form.0.email, 
         form.0.phone,
       );
-    let smtp_key : &str = "xsmtpsib-9eadffaef474428d38bfa7f1ae67f43a75dbbc0b7fee011fdae7eda3c9718518-QYjMTWN1Zpz9rEtO";
+    let smtp_key : &str = ".";
     let from_email : &str = "thegalacticsociety1@gmail.com";
     let host : &str = "smtp-relay.sendinblue.com";
     let to_email : &str = "iltifatibad@gmail.com";
